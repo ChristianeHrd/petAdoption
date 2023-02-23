@@ -1,5 +1,4 @@
 import AuthNav from "./Auth/AuthNav";
-import TopNav from "./TopNav";
 
 function Header() {
     return (
