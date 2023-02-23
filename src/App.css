@@ -166,6 +166,8 @@ p.petInfo {
     color: rgb(119, 2, 119);
     padding: 60px 0 30px 0;
     margin-top: 0;
+    font-family: 'Fredoka One', cursive;
+
 }
 
 .petTopDetails p {
