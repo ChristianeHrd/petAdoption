@@ -12,24 +12,36 @@ function PetDetails() {
                 <h1>Hi, my name is {details.name} </h1>
                 <p>{details.description} </p>
             </div>
-
+           
             <div className='petDetails'>
-                <p>Age: {details.age} </p>
-                <p>Breed: {details.breeds.primary}</p>
-                <a href={details.url}>link</a> <br/>
+                <p>
+                    About <br />
+                    Breed: {details.breeds.primary}<br />
+                    Mixed Breed: {details.breeds.mixed === 'true' ? 'Yes' : 'No'}<br />
+                    Age: {details.age} <br />
+
+                    Status: {details.status}<br />
+                    Size: {details.size}<br />
+
+                    Good with Children: {details.environment.children === 'true' ? 'Yes' : 'No'}<br />
+                    Good with Dogs: {details.environment.dogs === 'true' ? 'Yes' : 'No'}<br />
+                    Good with Cats: {details.environment.cats === 'true' ? 'Yes' : 'No'}<br />
+
+                    Spayed/Neutered: {details.attributes.spayed_neutered === 'true' ? 'Yes' : 'No'}<br />
+                    House Trained: {details.attributes.house_trained === 'true' ? 'Yes' : 'No'}<br />
+                    Special Needs: {details.attributes.special_needs === 'true' ? 'Yes' : 'No'}<br />
+
+                    <a href={details.url}>link</a> <br />
+                </p>
                 {/* <img alt={details.name} src={details.photos[0].medium}></img> */}
+                <div className='sliderContainer'>
+                    <ImageSlider photos={details.photos}></ImageSlider>
+                </div>
             </div>
-            
-            <div className='sliderContainer'>
-                <ImageSlider photos={details.photos}></ImageSlider>
-            </div>
+
+
         </div>
     )
 }
 
 export default PetDetails;
-
-// details.photos.map(i => (
-//     <a key={i.url} className="carousel-item">
-//         <img src={i.photo} />
-//     </a>
