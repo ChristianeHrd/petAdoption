@@ -1,21 +1,24 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { createContext, useEffect, useState } from 'react'
+import { AuthProvider } from './components/Auth/AuthProvider'
 import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
-import Countries from './components/Countries'
-import CountryDetails from './components/CountryDetails'
 import Admin from './components/Admin'
 import Login from './components/Auth/Login'
 import Logout from './components/Auth/Logout'
 import Signup from './components/Auth/Signup'
-import { AuthProvider } from './components/Auth/AuthProvider'
 import ProtectedRoutes from './components/Auth/ProtectedRoutes'
-import Pets from './Pets'
 import Cats from './Cats'
-import { createContext, useEffect, useState } from 'react'
+import Dogs from './Dogs'
 import PetDetails from './PetDetails'
+import Footer from './components/Footer'
+import Countries from './components/noUsing/Countries'
+import CountryDetails from './components/noUsing/CountryDetails'
+// import Pets from './Pets'
+// import Carousel from './components/noUsing/photos/Carousel3'
 // import { SignInMethod } from 'firebase/auth'
 
 // body: "grant_type=client_credentials&client_id=7mJAtEk3jGnD2imRkPG8ebaeREOSZgPHh4ZolCPX6TyzucQfFe&client_secret=5sYdCKxlBJQWPbH6TGmkSb0yGp66sqgbco2pwTns" ,
@@ -25,14 +28,11 @@ const host = 'api.petfinder.com';
 const grantType = 'client_credentials';
 export const AuthPetContext = createContext(null);
 
-function App() 
-{
+function App() {
   const [accessToken, setAccessToken] = useState(null)
 
   useEffect(() => {
-
-    async function fetchAccessToken() 
-    {
+    async function fetchAccessToken() {
       const params = new URLSearchParams();
       params.append('grant_type', 'client_credentials');
       params.append('client_id', petFinderKey);
@@ -46,7 +46,6 @@ function App()
 
       const json_data = await response.json();
       const accessToken = json_data.access_token;
-      // console.log('access-token? ' + accessToken)
       setAccessToken(accessToken);
     };
 
@@ -56,22 +55,25 @@ function App()
 
   return (
     <div className="App">
-      {/* <p>{accessToken}</p> */}
       <BrowserRouter>
         <AuthPetContext.Provider value={accessToken}>
           <AuthProvider>
             <Header />
-            <Navigation />
+            {/* <Navigation /> */}
 
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/cats" element={<Cats />} />
-              <Route path='/petdetails' element={<PetDetails />}></Route>
-              <Route path="/pets" element={<Pets />} />
-              <Route path="/countries" element={<Countries />}>
+              <Route path="/dogs" element={<Dogs />} />
+              <Route path='/petdetails' element={<PetDetails />} />
+              
+              
+              {/* <Route path='/carousel' element={<Carousel />}></Route> */}
+              {/* <Route path="/pets" element={<Pets />} /> */}
+              {/* <Route path="/countries" element={<Countries />}>
                 <Route path="details/:countryname" element={<CountryDetails />} />
-              </Route>
+              </Route> */}
 
               <Route path="/admin" element={<ProtectedRoutes />}>
                 <Route path="" element={<Admin />} />
@@ -81,6 +83,7 @@ function App()
               <Route path="/logout" element={<Logout />} />
             </Routes>
 
+            <Footer />
           </AuthProvider>
         </AuthPetContext.Provider>
       </BrowserRouter>

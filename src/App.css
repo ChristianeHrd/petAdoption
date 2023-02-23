@@ -1,29 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
 .flex-container {
     display: flex;
     /* background-color: #747ef9; */
-    background-color: #8e8797;
+    /* background-color: #8e8797; */
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     /* gap: 30px; */
-    justify-content: center;
-    justify-content: space-around;
+    /* justify-content: center; */
+    /* justify-content: safe */
 }
 
-.flex-container > div {
+
+.flex-container>div {
     background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
+    font-size: 18px;
+    flex: 33.33%;
     width: 30vw;
     height: 60vh;
-  }
+    margin-bottom: 17px;
+}
+
+@media only screen and (max-width: 900px) {
+    .flex-container>div {
+        flex: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-container>div {
+        flex: 100%;
+    }
+}
+
+.petCard {
+    display: flex;
+    width: 100%;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* .petPhotoCard {} */
+
+.petInfoCard {
+    width: 100%;
+    padding: 40px 15px 0 15px;
+    text-align: center;
+    font-size: 15pt;
+    font-family: 'League Spartan', sans-serif;
+    color: #46474f;
+}
+
+p.petInfo {
+    color: purple;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+}
 
 .petPhoto {
-    width: 90%;
-    height:80%;
-} 
+    /* width: 300px;
+    height: 340px; */
+    width: 270px;
+    height: 310px;
+    /* object-fit: cover; */
+    object-fit: scale-down;
+}
+
+.siteTittle {
+    display: inline-block;
+}
 
 .navbar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,23 +99,155 @@
     padding: 40px;
     padding-bottom: 10px;
     color: #46474f;
+    display: flex;
 }
 
+/*Login/Signup*/
 .authnav {
-    /* font-size:10pt;     */
-    /* font-family: 'Bebas Neue', cursive; */
-    font-size: 15pt;
+    font-size: 16pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 40px;
-
+    padding: 60px 40px 0 0;
+    float: right;
+    /* display: flex; */
 }
 
 .authLink {
     text-decoration: none;
-    padding-left: 20px;
-    color: white;
+    padding-left: 30px;
+    color: #737373;
+    /* display: inline-block; */
 }
 
+.header {
+    /* display: flex;  */
+    /* justify-content: space-around; */
+    /* background-color: #747ef9; */
+    width: 100%;
+    background-color: #FFD700;
+    color: #737373;
+    font-size: 40pt;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 5px;
+    padding-left: 70px;
+    padding-bottom: 3px;
+}
+
+.petLogo {
+    width: 170px;
+    height: 150px;
+    padding-right: 20px;
+    /* display: inline-block;  */
+}
+
+.homepage {
+    /* background: url("/public/lighthouse_bg.jpg"); */
+    /* height: 80vh; */
+    font-size: 28pt;
+    font-family: 'Roboto', sans-serif;
+    background-color: cornsilk;
+}
+
+.homepage p {
+    margin: 0 auto;
+    padding: 80px 0 80px 0;
+    width: 50vw;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    /* color:purple; */
+    color: rgb(119, 2, 119);
+}
+
+.home-photo-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.home-photo-flex-container>img {
+    flex: 33.33%;
+}
+
+.homePetPhoto {
+    width: 330px;
+    height: 370px;
+    /* width: 440px;
+    height: 480px; */
+
+    object-fit: cover;
+    /* object-fit: scale-down; */
+}
+
+
+/*Footer*/
+
+.site-footer {
+    background-color: #263238;
+    /* background-color: #26272b; */
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.copyright-text {
+    margin: 0
+}
+
+
+/***************/
+
+/* Login & Form */
 .loginPage {
     background-color: #747ef9;
     padding-top: 30px;
@@ -94,29 +286,4 @@ h3 {
 
 .logo {
     height: 50px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-around;
-    /* background-color: #747ef9; */
-    background-color: #83a2dc;
-    color: white;
-    font-size: 40pt;
-    font-family: 'Bebas Neue', cursive;
-    padding-top: 20px;
-}
-
-.homepage {
-    background: url("/public/lighthouse_bg.jpg");
-    height: 80vh;
-
-    font-size: 20pt;
-    font-family: 'Roboto', sans-serif;
-}
-
-.homepage p {
-    margin-left: 10vw;
-    padding-top: 20px;
-    width: 40vw;
 }

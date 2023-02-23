@@ -1,0 +1,19 @@
+<div class="card">
+<div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" className='petPhoto' src={p.photos[0].full} />
+</div>
+<div class="card-content">
+    <span class=" card-title activator grey-text text-darken-4">Meet {p.name}<i class="material-icons right">more_vert</i></span>
+    {/* <p><a href="#">This is a link</a></p> */}
+    <p><Link to='/petdetails' state={{ details: p }}>Get Details</Link></p>
+</div>
+<div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Hi I am {p.name} <i class="material-icons right">close</i></span>
+    <p>{p.description}</p>
+
+    <p>{p.breeds.primary ? p.breeds.primary: null} | 
+        {p.gender} | {p.age} | {p.size}
+    
+    </p>
+</div>
+</div>

@@ -10,7 +10,7 @@ function Dogs() {
     useEffect(() => {
 
         async function fetchPets() {
-            const petResults = await fetch('https://api.petfinder.com/v2/animals?type=cat&limit=100', {
+            const petResults = await fetch('https://api.petfinder.com/v2/animals?type=dog&limit=100', {
                 headers: {
                     Authorization: `Bearer ${accessToken}`
                 },
