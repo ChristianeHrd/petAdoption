@@ -16,7 +16,7 @@ function Login()
     return(
         <div className='loginPage'>
         <div className="loginform">
-        <h3>Login In</h3>
+        <h3>Log In</h3>
             <form className='formItems'>
                 <span className='formLabel'>Email: </span><input type="text" ref={userRef}></input><br/>
                 <span className='formLabel'>Password: </span><input type="password" ref={pwdRef}></input> <br/>

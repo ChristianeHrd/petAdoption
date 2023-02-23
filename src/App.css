@@ -150,7 +150,7 @@ p.petInfo {
     height: 300px;
 }
 
-/********Pet Details Style**********/
+/******** Pet Details Page **********/ 
 
 .petDetailsContainer {
     background-color: cornsilk;
@@ -179,9 +179,6 @@ p.petInfo {
 
 .petDetails p {
     color: black;
-    /* width: 55%; */
-    /* margin: 20px auto; */
-    /* text-align: center; */
     font-size: 14pt;
     padding-bottom: 40px;
     float: left;
@@ -204,7 +201,7 @@ p.petInfo {
     font-weight: bold;
 }
 
-/********End Pet Details Style**********/
+/********End Pet Details **********/
 
 
 /********Image Slider**********/
