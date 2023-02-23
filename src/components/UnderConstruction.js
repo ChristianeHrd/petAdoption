@@ -11,7 +11,6 @@ class UnderConstruction extends React.Component {
             </div>
             </>
         )
-
     }
 }
 

@@ -18,7 +18,7 @@ class Footer extends React.Component {
                                 <ul>
                                     <li><a className="grey-text " href="#!"><Link to="/underConstruction"> Donate</Link></a></li>
                                     <li><a class="grey-text " href="#!"><Link to="/underConstruction">Blog</Link></a></li>
-                                    <li><a class="grey-text " href="#!"><Link to="/aboutpetunderConstructionadoption"> About Pet Adoption</Link></a></li>
+                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction"> About Pet Adoption</Link></a></li>
                                 </ul>
                             </div>
                         </div>

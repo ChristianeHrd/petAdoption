@@ -14,13 +14,15 @@ function Signup()
     }
 
     return(
+        <div className='loginPage'>
         <div className="loginform">
             <h3>Sign Up</h3>
-            <form>
-                <input type="text" ref={userRef}></input><br/>
-                <input type="text" ref={pwdRef}></input><br/>
-                <button onClick={onAttemptSignup}>Signup</button>
+            <form className='formItems'>
+            <span className='formLabel'>Email: </span><input type="text" ref={userRef}></input><br/>
+            <span className='formLabel'>Password:</span><input type="text" ref={pwdRef}></input> <br/>
+                <button onClick={onAttemptSignup}>Sign Up</button>
             </form>
+        </div>
         </div>
     )
 }
