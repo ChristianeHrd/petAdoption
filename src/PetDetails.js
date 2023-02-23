@@ -5,32 +5,23 @@ function PetDetails() {
     const location = useLocation()
     const { details } = location.state
 
-    const container = {
-        width: '800px',
-        height: '500px',
-        // height: '580px',
-        // width: '500px',
-        // height: '280px',
-        margin: '0 auto'
-    }
-    console.log('description',details.description)
+    console.log('description', details.description)
     return (
         <>
-          <h4>Name: {details.name} </h4>
-          <p>{details.description} </p>
-          <a href={details.url}>link</a>
-            {/* <h4> {details.name}</h4> */}
-            
+            <div className='petDetails'>
+                <h1>Hi, my name is {details.name} </h1>
+                <p>{details.description} </p>
+            </div>
 
-            {/* <Link to="/petdetails" state={{ details: p }}>Get Details</Link> */}
+            <a href={details.url}>link</a>
 
-            {details.photos.map(i => (console.log('kkkkk', i)))}
+            {details.photos.map(i => (console.log('photo', i)))}
 
 
-            <div style={container}>
+            <div className='sliderContainer'>
                 <ImageSlider photos={details.photos}></ImageSlider>
             </div>
-          
+
             <h4>Age: {details.age} </h4>
             <img alt={details.name} src={details.photos[0].medium}></img>
 

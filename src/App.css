@@ -32,7 +32,6 @@
     .flex-container>div {
         flex: 50%;
     }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -220,8 +219,37 @@ p.petInfo {
     margin: 0
 }
 
+/********Pet Details Style**********/
+.petDetails {
+  
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.petDetails h1{
+    color: purple;
+    margin: 60px  0 50px 0;
+}
+
+.petDetails p {
+    color: black;
+    width: 55%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 15pt;
+    
+}
+
+/********End Pet Details Style**********/
+
 
 /********Image Slider**********/
+
+.sliderContainer {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+}
 
 .sliderStyle {
     height: 100%;
