@@ -14,14 +14,9 @@
 
 .flex-container {
     display: flex;
-    /* background-color: #747ef9; */
-    /* background-color: #8e8797; */
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    /* gap: 30px; */
-    /* justify-content: center; */
-    /* justify-content: safe */
 }
 
 
@@ -44,23 +39,6 @@
     .flex-container>div {
         flex: 100%;
     }
-}
-
-.petCard {
-    display: flex;
-    width: 100%;
-    /* font-family: 'Roboto', sans-serif; */
-}
-
-/* .petPhotoCard {} */
-
-.petInfoCard {
-    width: 100%;
-    padding: 40px 15px 0 15px;
-    text-align: center;
-    font-size: 15pt;
-    font-family: 'League Spartan', sans-serif;
-    color: #46474f;
 }
 
 p.petInfo {
