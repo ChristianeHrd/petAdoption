@@ -210,13 +210,9 @@ p.petInfo {
 /********Image Slider**********/
 
 .sliderContainer {
-    /* width: 800px;
-    height: 500px;
-    margin: 0 auto; */
     width: 800px;
     height: 500px;
     display: inline-block;
-
 }
 
 .sliderStyle {
@@ -257,37 +253,13 @@ p.petInfo {
     font-size: 10px;
 }
 
-/******End Image Slider********/
+/****** End Image Slider ********/
 
 
-
-/******Under Construction********/
-
-.underConstruction {
-
-    margin: 0 auto;
-    height: 650px;
-    width: 700px;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-.underConstruction h2 {
-    text-align: center;
-    font-size: 30pt;
-    margin: 50px 0;
-
-}
-
-
-/******Under Construction********/
-
-
-/*Footer*/
+/*/****** Footer *******/
 
 .site-footer {
     background-color: #263238;
-    /* background-color: #26272b; */
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
@@ -298,10 +270,10 @@ p.petInfo {
     color: #737373;
 }
 
-/* end of footer*/
+/*/****** End of Footer*******/
 
 
-/* Login & Form */
+/*/****** Login & Form /*******/
 .loginPage {
     padding-top: 30px;
 }
@@ -348,3 +320,21 @@ h3 {
 .logo {
     height: 50px;
 }
+
+/******Under Construction Page********/
+
+.underConstruction {
+
+    margin: 0 auto;
+    height: 650px;
+    width: 700px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.underConstruction h2 {
+    text-align: center;
+    font-size: 30pt;
+    margin: 50px 0;
+}
+
+/****** End Under Construction ********/
