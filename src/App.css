@@ -84,12 +84,9 @@ p.petInfo {
     text-decoration: none;
     padding-left: 30px;
     color: #737373;
-    /* display: inline-block; */
 }
 
 .header {
-    /* display: flex;  
-    justify-content: space-around;  */
     width: 100%;
     background-color: #FFD700;
     color: #737373;
