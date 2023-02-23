@@ -26,7 +26,6 @@ function PetDetails() {
                     <span className='stats'>House Trained: </span> {details.attributes.house_trained === 'true' ? 'Yes' : 'No'} <br />
                     <span className='stats'>Special Needs: </span> {details.attributes.special_needs === 'true' ? 'Yes' : 'No'} <br />
                 </p>
-                {/* <img alt={details.name} src={details.photos[0].medium}></img> */}
                 <div className='sliderContainer'>
                     <ImageSlider photos={details.photos}></ImageSlider>
                 </div>
