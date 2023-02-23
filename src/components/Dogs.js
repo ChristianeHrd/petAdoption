@@ -55,7 +55,7 @@ function Dogs() {
                                     </div>
                                     <div class="card-action blue-grey darken-1" >
                                         {/* <a href="#">This is a link</a> */}
-                                        <p><Link to='/petdetails' state={{ details: p }}> Meet {p.name}</Link></p>
+                                        <p className="meetFont"><Link to='/petdetails' state={{ details: p }}> Meet {p.name}</Link></p>
                                     </div>
                                 </div>
 
