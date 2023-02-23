@@ -14,11 +14,14 @@ class Footer extends React.Component {
                                     We help over 15,000 animal shelters, humane societies, SPCAs, pet rescue groups, and pet adoption agencies advertise their homeless pets to millions of adopters a month, all for free.</p>
                             </div>
                             <div class="col l4 offset-l2 s12">
-                                <h5 >Links</h5>
+                                <h5 >Adopt or Get Involved</h5>
                                 <ul>
-                                    <li><a className="grey-text " href="#!"><Link to="/underConstruction"> Donate</Link></a></li>
+                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction">Donate</Link></a></li>
                                     <li><a class="grey-text " href="#!"><Link to="/underConstruction">Blog</Link></a></li>
-                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction"> About Pet Adoption</Link></a></li>
+                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction">About Pet Adoption</Link></a></li>
+                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction">All About Dogs & Puppies</Link></a></li>
+                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction">All About Cats & Kittens</Link></a></li>
+                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction">Animal Shelters & Rescues</Link></a></li>
                                 </ul>
                             </div>
                         </div>

@@ -28,11 +28,6 @@ function Dogs() {
 
     return (
         <>
-            {/* <h2>Pets</h2> */}
-            {/* <p>{results}</p> */}
-            {/* <h2>Breed: {results[1].breeds.primary}</h2> */}
-            {/* <img alt='dogphoto' src={results[1].photos[0].medium}></img> */}
-            {/* <img src={results[1].photos[0]}></img> */}
 
             <div className="flex-container">
                 {(results[0]) ?
