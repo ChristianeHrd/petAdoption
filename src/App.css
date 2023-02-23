@@ -98,12 +98,11 @@ p.petInfo {
 
 .header {
     display: flex;  
-    justify-content: space-around;
+    justify-content: space-around; 
     width: 100%;
     background-color: #FFD700;
     color: #737373;
     font-size: 40pt;
-    /* font-family: 'Bebas Neue', cursive; */
     padding-top: 5px;
     padding-left: 70px;
     padding-bottom: 3px;
