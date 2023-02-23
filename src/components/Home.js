@@ -11,8 +11,6 @@ function Home() {
                     <img className='homePetPhoto' alt='bunny' src="./bunny.jpg" />
                 </div>
             </main>
-
-            
         </>
     )
 }

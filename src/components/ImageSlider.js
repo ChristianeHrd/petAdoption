@@ -24,8 +24,11 @@ function ImageSlider({ photos }) {
         height: '100%',
         borderRadius: '10px',
         backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        objectFit: 'cover',
+        // backgroundSize: 'cover',
+        // objectFit: 'cover',
+        backgroundSize: 'contain',
+        objectFit: 'contain',
+        backgroundRepeat: 'no-repeat',
         backgroundImage: `url(${photos[currentIndex].full}`
     }
 
