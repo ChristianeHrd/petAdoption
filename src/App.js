@@ -11,7 +11,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Cats from './components/Cats'
 import Dogs from './components/Dogs'
-import PetDetails from './PetDetails'
+import PetDetails from './components/PetDetails'
 import Footer from './components/Footer'
 import UnderConstruction from './components/UnderConstruction'
 
