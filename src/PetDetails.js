@@ -7,25 +7,24 @@ function PetDetails() {
 
     console.log('description', details.description)
     return (
-        <>
-            <div className='petDetails'>
+        <div className='petDetailsContainer'>
+            <div className='petTopDetails'>
                 <h1>Hi, my name is {details.name} </h1>
                 <p>{details.description} </p>
             </div>
-
-            <a href={details.url}>link</a>
-
-            {details.photos.map(i => (console.log('photo', i)))}
-
 
             <div className='sliderContainer'>
                 <ImageSlider photos={details.photos}></ImageSlider>
             </div>
 
-            <h4>Age: {details.age} </h4>
-            <img alt={details.name} src={details.photos[0].medium}></img>
+            <div className='petDetails'>
+                <p>Age: {details.age} </p>
+                <p>Breed: {details.breeds.primary}</p>
+                <a href={details.url}>link</a> <br/>
 
-        </>
+                {/* <img alt={details.name} src={details.photos[0].medium}></img> */}
+            </div>
+        </div>
     )
 }
 
