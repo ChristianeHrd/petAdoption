@@ -97,8 +97,8 @@ p.petInfo {
 }
 
 .header {
-    display: flex;  
-    justify-content: space-around; 
+    /* display: flex;  
+    justify-content: space-around;  */
     width: 100%;
     background-color: #FFD700;
     color: #737373;
