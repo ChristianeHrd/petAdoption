@@ -5,27 +5,27 @@ class Footer extends React.Component {
     render() {
         return (
             <>
-                <footer class="page-footer blue-grey darken-1">
+                <footer class="page-footer" className="site-footer">
                     <div class="container ">
                         <div class="row">
                             <div class="col l6 s12">
-                                <h5 class="white-text">About</h5>
-                                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                                <h5 >About</h5>
+                                <p >We're all about getting homeless pets into homes.
+                                    We help over 15,000 animal shelters, humane societies, SPCAs, pet rescue groups, and pet adoption agencies advertise their homeless pets to millions of adopters a month, all for free.</p>
                             </div>
                             <div class="col l4 offset-l2 s12">
-                                <h5 class="white-text">Links</h5>
+                                <h5 >Links</h5>
                                 <ul>
-                                    <li><a class="grey-text " href="#!"><Link to="/help"> Donate</Link></a></li>
-                                    <li><a class="grey-text " href="#!"> <Link to="/about">About</Link></a></li>
-                                    <li><a class="grey-text " href="#!">Link 4</a></li>
+                                    <li><a className="grey-text " href="#!"><Link to="/underConstruction"> Donate</Link></a></li>
+                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction">Blog</Link></a></li>
+                                    <li><a class="grey-text " href="#!"><Link to="/aboutpetunderConstructionadoption"> About Pet Adoption</Link></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="footer-copyright">
                         <div class="container">
-                            © 2014 Copyright Text
-                            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                            © 2023 Made with ❤ in Halifax
                         </div>
                     </div>
                 </footer>
