@@ -50,6 +50,9 @@ p.petInfo {
 
 .siteTittle {
     display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30pt; 
 }
 
 .navbar {
@@ -90,7 +93,7 @@ p.petInfo {
     width: 100%;
     background-color: #FFD700;
     color: #737373;
-    font-size: 40pt;
+      font-size: 40pt;
     padding-top: 5px;
     padding-left: 70px;
     padding-bottom: 3px;
@@ -100,7 +103,6 @@ p.petInfo {
     width: 170px;
     height: 150px;
     padding-right: 20px;
-    /* display: inline-block;  */
 }
 
 .homepage {
