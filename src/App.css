@@ -160,7 +160,6 @@ p.petInfo {
 }
 
 .petTopDetails {
-
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
@@ -183,10 +182,13 @@ p.petInfo {
 .petDetails p {
     color: black;
     /* width: 55%; */
-    margin: 20px auto;
-    text-align: center;
+    /* margin: 20px auto; */
+    /* text-align: center; */
     font-size: 17pt;
     padding-bottom: 40px;
+    float: left;
+    margin-right: 80px;
+    padding-left: 30px;
 }
 
 /********End Pet Details Style**********/
@@ -195,11 +197,12 @@ p.petInfo {
 /********Image Slider**********/
 
 .sliderContainer {
+    /* width: 800px;
+    height: 500px;
+    margin: 0 auto; */
     width: 800px;
     height: 500px;
-    /* margin: 0 auto; */
-    float: right;
-    margin-bottom: 400px;
+    display: inline-block;
 }
 
 .sliderStyle {

@@ -13,16 +13,15 @@ function PetDetails() {
                 <p>{details.description} </p>
             </div>
 
-            <div className='sliderContainer'>
-                <ImageSlider photos={details.photos}></ImageSlider>
-            </div>
-
             <div className='petDetails'>
                 <p>Age: {details.age} </p>
                 <p>Breed: {details.breeds.primary}</p>
                 <a href={details.url}>link</a> <br/>
-
                 {/* <img alt={details.name} src={details.photos[0].medium}></img> */}
+            </div>
+            
+            <div className='sliderContainer'>
+                <ImageSlider photos={details.photos}></ImageSlider>
             </div>
         </div>
     )
