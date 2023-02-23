@@ -33,11 +33,15 @@
     .flex-container>div {
         flex: 50%;
     }
+   
 }
 
 @media only screen and (max-width: 600px) {
     .flex-container>div {
         flex: 100%;
+    }
+    .homepage p {
+        font-size: 30px;
     }
 }
 
@@ -127,7 +131,6 @@ p.petInfo {
     width: 50vw;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    /* color:purple; */
     color: rgb(119, 2, 119);
 }
 
