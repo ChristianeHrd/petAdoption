@@ -32,48 +32,49 @@ function ImageSlider({ photos }) {
         backgroundImage: `url(${photos[currentIndex].full}`
     }
 
-    const sliderStyle = {
-        height: '100%',
-        position: 'relative'
-    }
+    // const sliderStyle = {
+    //     height: '100%',
+    //     position: 'relative'
+    // }
 
-    const leftArrayStyle = {
-        position: 'absolute',
-        top: '50%',
-        transform: 'translate(0, -50%)',
-        left: '32px',
-        fontSize: '45px',
-        color: '#fff',
-        zIndex: 1,
-        cursor: 'pointer'
-    }
-    const rightArrayStyle = {
-        position: 'absolute',
-        top: '50%',
-        transform: 'translate(0, -50%)',
-        right: '32px',
-        fontSize: '45px',
-        color: '#fff',
-        zIndex: 1,
-        cursor: 'pointer'
-    }
-    const dotsStyleContainer = {
-        display: 'flex',
-        justifyContent: 'center'
-    }
-    const dotsStyle = {
-        margin: '10px 8px',
-        cursor: 'pointer',
-        fontSize: '10px'
-    }
+    // const leftArrayStyle = {
+    //     position: 'absolute',
+    //     top: '50%',
+    //     transform: 'translate(0, -50%)',
+    //     left: '32px',
+    //     fontSize: '45px',
+    //     color: '#fff',
+    //     zIndex: 1,
+    //     cursor: 'pointer'
+    // }
+    // const rightArrayStyle = {
+    //     position: 'absolute',
+    //     top: '50%',
+    //     transform: 'translate(0, -50%)',
+    //     right: '32px',
+    //     fontSize: '45px',
+    //     color: '#fff',
+    //     zIndex: 1,
+    //     cursor: 'pointer'
+    // }
+    // const dotsStyleContainer = {
+    //     display: 'flex',
+    //     justifyContent: 'center'
+    // }
+    // const dotsStyle = {
+    //     margin: '10px 8px',
+    //     cursor: 'pointer',
+    //     fontSize: '10px'
+    // }
+
     return (
-        <div style={sliderStyle}>
-            <div style={leftArrayStyle} onClick={goToPrevious}>❰</div>
-            <div style={rightArrayStyle} onClick={goToNext}>❱</div>
+        <div className='sliderStyle'>
+            <div className= 'leftArrayStyle' onClick={goToPrevious}>❰</div>
+            <div className='rightArrayStyle' onClick={goToNext}>❱</div>
             <div style={slideStyle}></div>
-            <div style={dotsStyleContainer}>
+            <div className='dotsStyleContainer'>
                 {photos.map((photo, slideIndex) => (
-                    <div key={slideIndex} style={dotsStyle} onClick={()=>goToSlide(slideIndex)}>⚫</div>))}
+                    <div key={slideIndex} className='dotsStyle' onClick={()=>goToSlide(slideIndex)}>⚫</div>))}
             </div>
         </div>
     )
