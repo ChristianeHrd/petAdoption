@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from "react";
-import { AuthPetContext } from './App.js';
+import { AuthPetContext } from '../App.js';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ function Dogs() {
     useEffect(() => {
 
         async function fetchPets() {
-            const petResults = await fetch('https://api.petfinder.com/v2/animals?type=dog&limit=100', {
+            const petResults = await fetch('https://api.petfinder.com/v2/animals?type=cat&limit=100', {
                 headers: {
                     Authorization: `Bearer ${accessToken}`
                 },
