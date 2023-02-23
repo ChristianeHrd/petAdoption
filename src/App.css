@@ -171,7 +171,7 @@ p.petInfo {
 }
 
 .petTopDetails p {
-    color: black;
+    color: #46474f;
     width: 55%;
     margin: 20px auto;
     text-align: center;
@@ -180,7 +180,7 @@ p.petInfo {
 }
 
 .petDetails p {
-    color: black;
+    color: #46474f;
     font-size: 14pt;
     padding-bottom: 40px;
     float: left;
@@ -201,6 +201,7 @@ p.petInfo {
     font-size: 17px;
     margin: 90px 100px;
     font-weight: bold;
+    color: #46474f;;
 }
 
 /********End Pet Details **********/
