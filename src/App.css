@@ -72,13 +72,12 @@ p.petInfo {
     display: flex;
 }
 
-/*Login/Signup*/
 .authnav {
-    font-size: 16pt;
+    font-size: 13pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 60px 40px 0 0;
     float: right;
-    /* display: flex; */
+    text-transform: uppercase;
 }
 
 .authLink {
