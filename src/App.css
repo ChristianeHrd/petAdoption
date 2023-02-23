@@ -225,7 +225,7 @@ p.petInfo {
     transform: translate(0, -50%);
     left: 32px;
     font-size: 45px;
-    color: #fff;
+    color: #46474f;
     z-index: 1;
     cursor: pointer;
 }
@@ -236,7 +236,7 @@ p.petInfo {
     transform: translate(0, -50%);
     right: 32px;
     font-size: 45px;
-    color: #fff;
+    color:#46474f;
     z-index: 1;
     cursor: pointer;
 }
