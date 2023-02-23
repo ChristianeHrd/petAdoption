@@ -14,6 +14,7 @@ import Cats from './Cats'
 import Dogs from './Dogs'
 import PetDetails from './PetDetails'
 import Footer from './components/Footer'
+import UnderConstruction from './components/UnderConstruction'
 
 
 // body: "grant_type=client_credentials&client_id=7mJAtEk3jGnD2imRkPG8ebaeREOSZgPHh4ZolCPX6TyzucQfFe&client_secret=5sYdCKxlBJQWPbH6TGmkSb0yGp66sqgbco2pwTns" ,
@@ -60,7 +61,7 @@ function App() {
               <Route path="/cats" element={<Cats />} />
               <Route path="/dogs" element={<Dogs />} />
               <Route path='/petdetails' element={<PetDetails />} />
-              {/* <Route path="/underconstruction" element={<UnderConstruction />} /> */}
+              <Route path="/underconstruction" element={<UnderConstruction />} />
               <Route path="/admin" element={<ProtectedRoutes />}>
                 <Route path="" element={<Admin />} />
               </Route>
