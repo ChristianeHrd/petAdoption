@@ -37,7 +37,7 @@
 }
 
 p.petInfo {
-    color: purple;
+    color: rgb(119, 2, 119);
     text-align: center;
     font-family: 'League Spartan', sans-serif;
 }
@@ -93,7 +93,7 @@ p.petInfo {
     width: 100%;
     background-color: #FFD700;
     color: #737373;
-      font-size: 40pt;
+    font-size: 40pt;
     padding-top: 5px;
     padding-left: 70px;
     padding-bottom: 3px;
@@ -163,7 +163,7 @@ p.petInfo {
 }
 
 .petTopDetails h1 {
-    color: purple;
+    color: rgb(119, 2, 119);
     padding: 60px 0 30px 0;
     margin-top: 0;
 }
@@ -194,7 +194,7 @@ p.petInfo {
 .stats {
     text-transform: uppercase;
     font-size: 11pt;
-    color: purple;
+    color: rgb(119, 2, 119);
     font-weight: bold;
 }
 
