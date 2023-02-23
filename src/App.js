@@ -4,7 +4,6 @@ import { createContext, useEffect, useState } from 'react'
 import { AuthProvider } from './components/Auth/AuthProvider'
 import Header from './components/Header'
 import Home from './components/Home'
-import About from './components/About'
 import Admin from './components/Admin'
 import Login from './components/Auth/Login'
 import Logout from './components/Auth/Logout'
@@ -57,7 +56,6 @@ function App() {
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
               <Route path="/cats" element={<Cats />} />
               <Route path="/dogs" element={<Dogs />} />
               <Route path='/petdetails' element={<PetDetails />} />
