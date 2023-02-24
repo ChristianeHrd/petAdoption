@@ -2,9 +2,9 @@ import { useEffect, useState, useContext } from "react";
 import { AuthPetContext } from '../App.js';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import { Link } from "react-router-dom";
+import Preloader from "./Preloader.js";
 
-function Dogs() 
-{
+function Dogs() {
     const [results, setResults] = useState([]);
     const accessToken = useContext(AuthPetContext);
 
@@ -26,14 +26,14 @@ function Dogs()
     const pawPrint = {
         margin: '0 5px 0 5px'
     }
-
     return (
         <>
             <div className="flex-container">
-                {(results[0]) ?
-                    results.filter(p => p.photos[0]).map(p => (
-                        <div>
-                            {
+            {(results[0]) ?
+                results.filter(p => p.photos[0]).map(p => (
+                    <div >
+                        {
+                            <div >
                                 <div class="card" >
                                     <div class="card-image" >
                                         <img className='petPhoto' src={p.photos[0].full} />
@@ -48,9 +48,10 @@ function Dogs()
                                         <p className="meetFont"><Link to='/petdetails' state={{ details: p }}> Meet {p.name}</Link></p>
                                     </div>
                                 </div>
-
-                            }
-                        </div>)) : null}
+                            </div>
+                        }
+                    </div>)) : <Preloader/>
+            }
             </div>
         </>
     )
