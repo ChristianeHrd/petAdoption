@@ -3,7 +3,8 @@ import { AuthPetContext } from '../App.js';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import { Link } from "react-router-dom";
 
-function Dogs() {
+function Dogs() 
+{
     const [results, setResults] = useState([]);
     const accessToken = useContext(AuthPetContext);
 

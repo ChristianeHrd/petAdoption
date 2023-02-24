@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function TopNav() {
-
+function TopNav() 
+{
   return (
     <>
       <Link to="/" className='authLink'> Home</Link>

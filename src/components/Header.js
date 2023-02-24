@@ -1,6 +1,7 @@
 import AuthNav from "./Auth/AuthNav";
 
-function Header() {
+function Header() 
+{
     return (
         <header>
             <div className="header">
