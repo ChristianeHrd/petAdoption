@@ -1,7 +1,8 @@
 import { useLocation } from 'react-router-dom'
 import ImageSlider from './ImageSlider';
 
-function PetDetails() {
+function PetDetails() 
+{
     const location = useLocation()
     const { details } = location.state
 
@@ -26,13 +27,14 @@ function PetDetails() {
                     <span className='stats'>House Trained: </span> {details.attributes.house_trained === 'true' ? 'Yes' : 'No'} <br />
                     <span className='stats'>Special Needs: </span> {details.attributes.special_needs === 'true' ? 'Yes' : 'No'} <br />
                 </p>
+
                 <div className='sliderContainer'>
                     <ImageSlider photos={details.photos}></ImageSlider>
                 </div>
+
             </div>
             <br />
             < span className='emailInfo'>For more information please email: <a href={'mailto:' + details.contact.email}>{details.contact.email}</a></span><br />
-
         </div>
     )
 }
