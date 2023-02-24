@@ -16,8 +16,8 @@ class Footer extends React.Component {
                             <div class="col l4 offset-l2 s12">
                                 <h5 >Adopt or Get Involved</h5>
                                 <ul>
-                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction">Donate</Link></a></li>
                                     <li><a class="grey-text " href="#!"><Link to="/underConstruction">Blog</Link></a></li>
+                                    <li><a class="grey-text " href="#!"><Link to="/underConstruction">Donate</Link></a></li>
                                     <li><a class="grey-text " href="#!"><Link to="/underConstruction">About Pet Adoption</Link></a></li>
                                     <li><a class="grey-text " href="#!"><Link to="/underConstruction">All About Dogs & Puppies</Link></a></li>
                                     <li><a class="grey-text " href="#!"><Link to="/underConstruction">All About Cats & Kittens</Link></a></li>
