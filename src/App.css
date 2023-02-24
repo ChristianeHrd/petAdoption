@@ -4,16 +4,14 @@
     margin: 0;
 }
 
-.flex-container 
-{
+.flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.flex-container>div 
-{
+.flex-container>div {
     background-color: #f1f1f1;
     font-size: 18px;
     flex: 33.33%;
@@ -22,16 +20,45 @@
     margin-bottom: 17px;
 }
 
-@media only screen and (max-width: 900px) 
-{
+.contact-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-flex-container>div {
+    flex: 50%;
+}
+
+.formPhoto {
+    width: 100%;
+}
+
+.contactForm {
+    margin: 0 auto;
+    width: 80%;
+}
+ 
+.contactForm h1{
+    text-align: center;
+    font-family:  'Lato', sans-serif;
+    color: #595b6b;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px) {
     .flex-container>div {
         flex: 50%;
     }
 }
 
-@media only screen and (max-width: 600px) 
-{
+@media only screen and (max-width: 600px) {
     .flex-container>div {
+        flex: 100%;
+    }
+
+    .contact-flex-container>div {
         flex: 100%;
     }
 
@@ -40,30 +67,26 @@
     }
 }
 
-p.petInfo 
-{
+p.petInfo {
     color: rgb(119, 2, 119);
     text-align: center;
     font-family: 'League Spartan', sans-serif;
 }
 
-.petPhoto 
-{
+.petPhoto {
     width: 270px;
     height: 310px;
     object-fit: scale-down;
 }
 
-.siteTittle 
-{
+.siteTittle {
     display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 30pt; 
+    font-size: 30pt;
 }
 
-.navbar 
-{
+.navbar {
     width: 100%;
     display: flex;
     align-items: center;
@@ -72,8 +95,7 @@ p.petInfo
     height: 100px;
 }
 
-.navlink 
-{
+.navlink {
     margin-left: 8px;
     margin-right: 8px;
     font-size: 15pt;
@@ -84,8 +106,7 @@ p.petInfo
     display: flex;
 }
 
-.authnav 
-{
+.authnav {
     font-size: 13pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 60px 40px 0 0;
@@ -93,15 +114,13 @@ p.petInfo
     text-transform: uppercase;
 }
 
-.authLink 
-{
+.authLink {
     text-decoration: none;
     padding-left: 30px;
     color: #737373;
 }
 
-.header 
-{
+.header {
     width: 100%;
     background-color: #FFD700;
     color: #737373;
@@ -111,45 +130,42 @@ p.petInfo
     padding-bottom: 3px;
 }
 
-.petLogo 
-{
+.petLogo {
     width: 170px;
     height: 150px;
     padding-right: 20px;
 }
 
-.homepage 
-{
+.homepage {
     font-size: 28pt;
     font-family: 'Roboto', sans-serif;
-    background-color: cornsilk;
+    
+}
+.homeParagrap{
+background-color: cornsilk;
 }
 
-.homepage p 
-{
+.homepage p {
     margin: 0 auto;
-    padding: 80px 0 80px 0;
+    padding: 60px 0 60px 0;
     width: 50vw;
     text-align: center;
     font-family: 'Lato', sans-serif;
     color: rgb(119, 2, 119);
 }
 
-.home-photo-flex-container 
-{
+.home-photo-flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.home-photo-flex-container>img 
-{
+.home-photo-flex-container>img {
     flex: 33.33%;
 }
 
-.homePetPhoto 
-{
+.homePetPhoto {
     width: 330px;
     height: 370px;
     /* width: 440px;
@@ -157,42 +173,36 @@ p.petInfo
     object-fit: cover;
 }
 
-.home-photo-flex-container>div 
-{
+.home-photo-flex-container>div {
     flex: 33.33%;
 }
 
-.homeCard 
-{
+.homeCard {
 
     font-size: 15px;
     height: 300px;
 }
 
-/******** Pet Details Page **********/ 
+/******** Pet Details Page **********/
 
-.petDetailsContainer 
-{
+.petDetailsContainer {
     background-color: cornsilk;
     padding-bottom: 50px;
 }
 
-.petTopDetails 
-{
+.petTopDetails {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
-.petTopDetails h1 
-{
+.petTopDetails h1 {
     color: rgb(119, 2, 119);
     padding: 60px 0 30px 0;
     margin-top: 0;
     font-family: 'Fredoka One', cursive;
 }
 
-.petTopDetails p 
-{
+.petTopDetails p {
     color: #46474f;
     width: 55%;
     margin: 20px auto;
@@ -201,8 +211,7 @@ p.petInfo
     padding-bottom: 40px;
 }
 
-.petDetails p 
-{
+.petDetails p {
     color: #46474f;
     font-size: 14pt;
     padding-bottom: 40px;
@@ -220,16 +229,15 @@ p.petInfo
     font-weight: bold;
 }
 
-.emailInfo 
-{
+.emailInfo {
     font-size: 17px;
     margin: 90px 100px;
     font-weight: bold;
-    color: #46474f;;
+    color: #46474f;
+    ;
 }
 
-.meetFont 
-{
+.meetFont {
     text-align: center;
 }
 
@@ -238,21 +246,18 @@ p.petInfo
 
 /********Image Slider**********/
 
-.sliderContainer 
-{
+.sliderContainer {
     width: 800px;
     height: 500px;
     display: inline-block;
 }
 
-.sliderStyle 
-{
+.sliderStyle {
     height: 100%;
     position: relative;
 }
 
-.leftArrayStyle 
-{
+.leftArrayStyle {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -263,26 +268,23 @@ p.petInfo
     cursor: pointer;
 }
 
-.rightArrayStyle 
-{
+.rightArrayStyle {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     right: 32px;
     font-size: 45px;
-    color:#46474f;
+    color: #46474f;
     z-index: 1;
     cursor: pointer;
 }
 
-.dotsStyleContainer 
-{
+.dotsStyleContainer {
     display: flex;
     justify-content: center;
 }
 
-.dotsStyle 
-{
+.dotsStyle {
     margin: 10px 8px;
     cursor: pointer;
     font-size: 10px;
@@ -293,8 +295,7 @@ p.petInfo
 
 /*/****** Footer *******/
 
-.site-footer 
-{
+.site-footer {
     background-color: #263238;
     padding: 45px 0 20px;
     font-size: 15px;
@@ -302,8 +303,7 @@ p.petInfo
     color: #737373;
 }
 
-.site-footer a 
-{
+.site-footer a {
     color: #737373;
 }
 
@@ -311,13 +311,11 @@ p.petInfo
 
 
 /*/****** Login & Form /*******/
-.loginPage 
-{
+.loginPage {
     padding-top: 30px;
 }
 
-.loginform 
-{
+.loginform {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -327,13 +325,11 @@ p.petInfo
     background-color: white;
 }
 
-.formItems 
-{
+.formItems {
     padding-top: 30px;
 }
 
-.formItems button 
-{
+.formItems button {
     background-color: #FFD700;
     width: 100px;
     height: 40px;
@@ -342,8 +338,7 @@ p.petInfo
     margin-top: 40px;
 }
 
-h3 
-{
+h3 {
     margin-top: 80px;
     margin-left: -30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -351,8 +346,7 @@ h3
     text-transform: uppercase;
 }
 
-.formLabel 
-{
+.formLabel {
     display: inline-block;
     width: 200px;
     padding-bottom: 20px;
@@ -360,23 +354,20 @@ h3
     font-weight: bold;
 }
 
-.logo 
-{
+.logo {
     height: 50px;
 }
 
 /******Under Construction Page********/
 
-.underConstruction 
-{
+.underConstruction {
     margin: 0 auto;
     height: 650px;
     width: 700px;
     font-family: 'Roboto', sans-serif;
 }
 
-.underConstruction h2 
-{
+.underConstruction h2 {
     text-align: center;
     font-size: 30pt;
     margin: 50px 0;
