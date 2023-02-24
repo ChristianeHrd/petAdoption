@@ -16,7 +16,6 @@ import Footer from './components/Footer'
 import UnderConstruction from './components/UnderConstruction'
 import ScrollToTop from './components/ScrollToTop'
 
-// body: "grant_type=client_credentials&client_id=7mJAtEk3jGnD2imRkPG8ebaeREOSZgPHh4ZolCPX6TyzucQfFe&client_secret=5sYdCKxlBJQWPbH6TGmkSb0yGp66sqgbco2pwTns" ,
 const petFinderKey = '7mJAtEk3jGnD2imRkPG8ebaeREOSZgPHh4ZolCPX6TyzucQfFe';
 const petFinderSecret = '5sYdCKxlBJQWPbH6TGmkSb0yGp66sqgbco2pwTns';
 export const AuthPetContext = createContext(null);
