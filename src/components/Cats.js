@@ -23,7 +23,7 @@ function Dogs() {
     }, [accessToken])
 
     const pawPrint = {
-        margin: '0 5px 0 5px' 
+        margin: '0 5px 0 5px'
     }
 
     return (
@@ -38,10 +38,10 @@ function Dogs() {
                                         <img className='petPhoto' src={p.photos[0].full} />
                                     </div>
                                     <div class="card-content" >
-                                        <p className="petInfo"> {p.breeds.primary ? p.breeds.primary : null} <br/>
-                                        <span style={pawPrint}> 🐾 </span> {p.gender}
-                                        <span style={pawPrint}> 🐾 </span> {p.age}
-                                        <span style={pawPrint}> 🐾 </span> {p.size}</p>
+                                        <p className="petInfo"> {p.breeds.primary ? p.breeds.primary : null} <br />
+                                            <span style={pawPrint}> 🐾 </span> {p.gender}
+                                            <span style={pawPrint}> 🐾 </span> {p.age}
+                                            <span style={pawPrint}> 🐾 </span> {p.size}</p>
                                     </div>
                                     <div class="card-action blue-grey darken-1" >
                                         <p className="meetFont"><Link to='/petdetails' state={{ details: p }}> Meet {p.name}</Link></p>
