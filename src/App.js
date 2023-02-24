@@ -20,10 +20,12 @@ const petFinderKey = '7mJAtEk3jGnD2imRkPG8ebaeREOSZgPHh4ZolCPX6TyzucQfFe';
 const petFinderSecret = '5sYdCKxlBJQWPbH6TGmkSb0yGp66sqgbco2pwTns';
 export const AuthPetContext = createContext(null);
 
-function App() {
+function App() 
+{
   const [accessToken, setAccessToken] = useState(null)
 
   useEffect(() => {
+    
     async function fetchAccessToken() {
       const params = new URLSearchParams();
       params.append('grant_type', 'client_credentials');
