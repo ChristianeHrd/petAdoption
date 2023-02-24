@@ -5,7 +5,7 @@ function Header()
     return (
         <header>
             <div className="header">
-                <img className='petLogo' alt="pet-logo" src="./petLogo2.jpg" ></img>
+                <img className='petLogo' alt="pet-logo" src="/petlogo.jpg" ></img>
                <div className="siteTittle">Adopt a Friend</div>
                 <AuthNav />
             </div>
