@@ -1,21 +1,25 @@
 import { useState } from "react";
 
-function ImageSlider({ photos }) {
+function ImageSlider({ photos }) 
+{
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    function goToPrevious() {
+    function goToPrevious() 
+    {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? photos.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     }
 
-    function goToNext() {
+    function goToNext() 
+    {
         const isLastSlide = currentIndex === photos.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     }
 
-    function goToSlide(slideIndex) {
+    function goToSlide(slideIndex) 
+    {
         setCurrentIndex(slideIndex)
     }
 
@@ -24,8 +28,6 @@ function ImageSlider({ photos }) {
         height: '100%',
         borderRadius: '10px',
         backgroundPosition: 'center',
-        // backgroundSize: 'cover',
-        // objectFit: 'cover',
         backgroundSize: 'contain',
         objectFit: 'contain',
         backgroundRepeat: 'no-repeat',
