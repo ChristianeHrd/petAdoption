@@ -2,6 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { AuthPetContext } from '../App.js';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import { Link } from "react-router-dom";
+import Preloader from "./Preloader.js";
 
 function Dogs() 
 {
@@ -49,7 +50,7 @@ function Dogs()
                                     </div>
                                 </div>
                             }
-                        </div>)) : null}
+                        </div>)) : <Preloader/>}
             </div>
         </>
     )
