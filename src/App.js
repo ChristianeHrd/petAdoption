@@ -16,8 +16,8 @@ import Footer from './components/Footer'
 import UnderConstruction from './components/UnderConstruction'
 import ScrollToTop from './components/ScrollToTop'
 
-const petFinderKey = '7mJAtEk3jGnD2imRkPG8ebaeREOSZgPHh4ZolCPX6TyzucQfFe';
-const petFinderSecret = '5sYdCKxlBJQWPbH6TGmkSb0yGp66sqgbco2pwTns';
+const petFinderKey = process.env.REACT_APP_petFinderKey;
+const petFinderSecret = process.env.REACT_APP_petFinderSecret;
 export const AuthPetContext = createContext(null);
 
 function App() 
